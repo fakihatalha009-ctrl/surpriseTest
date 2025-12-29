@@ -1,3 +1,51 @@
-.container{
-    display: flex;
+:root {
+    --accent-color: #053634;
+    --secondary-color: #ebB017;
+    --dark-color: #053634;
+    --body-text-color: #053634;
+    --background-color: #f0f1EA;
+    --light-accent-color: #A4B7B1;
+    --light-background-color: #f8f6f1;
+}
+
+
+.navbar{
+    background-color: var(--light-background-color) !important;
+}
+
+.navbar .nav-item :hover{
+border-bottom: 2px solid var(--secondary-color);
+}
+.navbar .nav-item :focus{
+    border-bottom: 2px solid var(--secondary-color);
+    }
+.hero,.news,.contact {
+    background-color: var(--background-color);
+}
+.about,.testonimila,.blog,.portfolios, footer {
+    background-color: var(--light-background-color);
+}
+.logo{
+    border-bottom: 2px solid var(--body-text-color);
+}
+footer li{
+   list-style: none;
+
+}
+footer li a{
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+
+@media(max-width:1200px){
+    .logo{
+        flex-direction: column !important;
+        align-items: center;
+        
+    }
+   
 }
